@@ -1,13 +1,104 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+body{
+  background-color: #1c2120;
+}
+/* FONTS */
+.acme-regular {
+  font-family: "Acme", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.league-spartan-500 {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.luckiest-guy-regular {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* NAVBAR */
+
+header{
+  color: white !important;
+  background-color: #1c2120 !important;
+}
+
+nav a, li{
+  color: white !important;
+  /* font-size: 1.5rem !important; */
+  font-size: calc(0.8em + 0.8vw) !important;
+}
+
+header .logo{
+  height: 6rem;
+  width: 6rem;
+}
+
+.active{
+  padding: 3px 25px !important;
+  background-color: #fcbc01;
+  border-radius: 25px;
+}
+
+/* HOMEPAGE */
+.carousels{
+  height: 250px;
+  width: 100%;
+  background-image: url("./Assets/mc_bg3.png");
+  /* display: flex; */
+  /* justify-content: center; */
+  /* border-radius: 15px; */
+  /* flex-wrap: wrap; */
+  display: block;
+  align-items: center;
+  color: ghostwhite;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.carousels h1{
+  font-size: calc(2em + 1.3vw);
+}
+
+.carousels span{
+  /* font-family: 'Gagalin', "Acme"; */
+  font-weight: 800 !important;
+  color: #fcbc01;
+}
+
+.home-about h2{
+  color: #fcbc01;
+  font-weight: 800;
+}
+
+.home-about h6{
+  color: white;
+  font-weight: 400;
+  font-size: calc(0.5em + 1vw);
+}
+
+.home-about h4{
+  color: white;
 }
