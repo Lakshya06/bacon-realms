@@ -53,6 +53,11 @@ header .logo{
   width: 6rem;
 }
 
+header .mobile-logo img{
+  height: 10vw;
+  width: 10vw;
+}
+
 .active{
   padding: 3px 25px !important;
   background-color: #fcbc01;
@@ -94,11 +99,42 @@ header .logo{
 }
 
 .home-about h6{
-  color: white;
+  color: whitesmoke;
   font-weight: 400;
-  font-size: calc(0.5em + 1vw);
+  font-size: calc(0.5em + 0.8vw);
 }
 
 .home-about h4{
+  font-size: calc(0.6em + 0.8vw) !important;
   color: white;
+}
+
+/* FOOTER */
+
+.footer{
+  font-family: "Acme", sans-serif;
+  color: whitesmoke;
+}
+
+.footer h5{
+  font-size: calc(0.6em + 1vw);
+  color: #a7a7a7;
+  font-weight: 700;
+}
+
+.footer h6{
+  font-size: calc(0.3em + 1vw);
+  color: #767676;
+}
+
+.footer .footer-nav a{
+  
+  color: #767676;
+  text-decoration: none;
+  font-size: calc(0.3em + 0.9vw);
+}
+
+.footer .footer-icons a{
+  font-size: calc(0.5em + 1vw);
+  color: #767676;
 }

@@ -11,7 +11,7 @@ function HomePage(){
 
             <Container className="home-about">
 
-                <div className="py-5 px-1 px-md-3 league-spartan-500">
+                <div className="pt-5 pb-4 pb-md-5 px-1 px-md-3 league-spartan-500">
                     <h2>About Bacon Realms</h2>
                     <h6 className="px-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ipsam unde corrupti harum voluptate quaerat fuga nostrum est quae commodi veniam sequi laboriosam consectetur magnam laudantium, vitae consequuntur quis! Voluptatibus debitis eaque quod cupiditate neque iure laborum excepturi nesciunt, laboriosam labore, quasi illum, maxime eius eveniet accusamus amet ratione suscipit id hic dolorum? Laudantium tempore laboriosam quod, obcaecati exercitationem libero doloribus fugit quos quas magnam. Nam, accusamus blanditiis expedita voluptatibus, temporibus commodi repellat sapiente architecto incidunt assumenda saepe vero autem cupiditate sint unde, corporis et iste illum! Tempora, tenetur blanditiis!
                         <br /> <br />
@@ -19,7 +19,7 @@ function HomePage(){
                     </h6>
                 </div>
 
-                <div className="py-5 px-1 px-md-3 league-spartan-500">
+                <div className="pb-5 py-md-5 px-1 px-md-3 league-spartan-500">
                     <h2>How to Join?</h2>
                     <h4 className="px-4">1. Add the Server</h4>
                     <h6 className="px-5">Go to multiplayer in minecraft, then add server</h6>
