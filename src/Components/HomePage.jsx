@@ -13,9 +13,27 @@ function HomePage(){
 
                 <div className="pt-5 pb-4 pb-md-5 px-1 px-md-3 league-spartan-500">
                     <h2>About Bacon Realms</h2>
-                    <h6 className="px-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ipsam unde corrupti harum voluptate quaerat fuga nostrum est quae commodi veniam sequi laboriosam consectetur magnam laudantium, vitae consequuntur quis! Voluptatibus debitis eaque quod cupiditate neque iure laborum excepturi nesciunt, laboriosam labore, quasi illum, maxime eius eveniet accusamus amet ratione suscipit id hic dolorum? Laudantium tempore laboriosam quod, obcaecati exercitationem libero doloribus fugit quos quas magnam. Nam, accusamus blanditiis expedita voluptatibus, temporibus commodi repellat sapiente architecto incidunt assumenda saepe vero autem cupiditate sint unde, corporis et iste illum! Tempora, tenetur blanditiis!
-                        <br /> <br />
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ducimus aut magnam inventore veritatis odit nisi corrupti iste soluta! Officia, tenetur reprehenderit quis quibusdam illum praesentium exercitationem possimus, dolor incidunt accusamus, molestiae ad veritatis excepturi! Libero repudiandae qui maiores itaque nostrum. Autem animi corrupti laboriosam? Quasi commodi, cupiditate ipsam dicta dolorum facilis, labore debitis ducimus tenetur alias eos adipisci numquam?
+                    <h6 className="px-4">
+                    Explore the Exciting Baconrealms World!! Discover the ultimate Minecraft experience on Baconrealms. Join now to join a vibrant community, epic battles, and endless adventures!
+                    Discover the ultimate Minecraft experience with our diverse and engaging gameplay. Join us now and explore a world of endless possibilities!. Immerse yourself in the best Minecraft server with unique features and a welcoming community. Start your adventure today and build, explore, and conquer!. Unleash your creativity and join our Minecraft server for an unforgettable gaming experience. With exciting challenges and friendly players, the fun never ends! Explore custom maps, participate in epic battles, and make new friends and participate weekly events!!!
+                    Discover Minecraft with unique gameplay modes, exclusive rewards, and a welcoming community. Perfect for new and seasoned players alike!!!
+                    <br />
+                    <br />
+                    Whats good in minecraft servers?
+                    Minecraft servers are the backbone of the multiplayer experience in the game. They provide players with opportunities to embark on adventures, build vast structures with friends, and compete in various challenges. Running a successful Minecraft server involves not just setting it up but also ensuring it stands out in a crowded field. This entails robust server management, fostering a vibrant community, and effective promotion.
+                    <br />
+                    <br />
+                    You can experience a lots of fun things like-
+                    Custom Maps and Worlds:
+                    Custom maps can significantly set your server apart. These maps can offer unique landscapes, intricate structures, and hidden secrets that aren’t found in the vanilla version of Minecraft. When players explore new territories, it keeps the gameplay fresh and exciting, encouraging them to spend more time on your server.
+                    <br />
+                    <br />
+                    Plugins and Mods:
+                    Plugins are essential in customizing the Minecraft experience. They can add new features, such as mini-games, economies, and enhanced moderation tools. Consider plugins that introduce unique game modes or automation tools that make server management more seamless. Mods, on the other hand, can change gameplay elements, graphics, and even add new items to the game, providing a more enriched experience.
+                    <br />
+                    <br /> 
+                    Quests and Achievements:
+                    Creating custom quests and achievements can give players goals to work towards, keeping them engaged over the long term. These quests can be simple tasks or elaborate storylines that players can follow, offering rewards and recognition for their efforts.
                     </h6>
                 </div>
 
