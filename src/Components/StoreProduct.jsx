@@ -11,7 +11,7 @@ function StoreProduct(props){
 
     const carts = useSelector(store => store.cart.items);
     // console.log(carts);
-    const {id, name, price} = props.data;
+    const {id, name, price, img} = props.data;
 
     const dispatch = useDispatch();
     function handleAddToCart(){
@@ -29,10 +29,12 @@ function StoreProduct(props){
 
                 <Col md={4} xs={12} className="w-80 store-items px-5 py-4 luckiest-guy-regular">
                     <Card className="justify-content-center text-center align-items-center item-card">
-                    <Card.Img variant="top" src={require('../Assets/diamond-hoe.png')} className="my-4"/>
+                    {/* <Card.Img variant="top" src={require('../Assets/diamond-hoe.png')} className="my-4"/> */}
+                    {/* {console.log(img)} */}
+                    <Card.Img variant="top" src={img} className="my-4"/>
                     <Card.Body>
                         <Card.Title>{name}</Card.Title>
-                        <Card.Title>$ {price}</Card.Title>
+                        <Card.Title>$ {price}.00 USD</Card.Title>
                         {/* <Card.Text>
                         $ {price}
                         </Card.Text> */}
