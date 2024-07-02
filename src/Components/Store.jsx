@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 // import { Link, Navigate } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
-import { products } from "../Assets/storeList";
+// import { products } from "../Assets/storeList";
+
+import { ranks, perks, crates, items } from "../Assets/storeList";
+
 import StoreProduct from "./StoreProduct";
 // import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
@@ -18,6 +21,7 @@ function Store(){
     const [totalQuantity, setTotalQuantity] = useState(0);
     const [finalTotalCost, setFinalTotalCost] = useState(0);
     const carts = useSelector(store => store.cart.items);
+    const [products , setProducts] = useState(ranks);
     // console.log(carts)
     // let finalTotalCost = 0;
 
@@ -44,8 +48,33 @@ function Store(){
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    function handleSelect(ev){
-        // console.log(ev);
+    const [selectValue, setSelectValue] = React.useState("ranks");
+    function handleSelectChange(ev){
+        const value = ev.target.value;
+        // products = {value};
+        switch(value){
+            case "ranks":
+                // products = ranks;
+                setProducts(ranks)
+                break;
+            case "perks":
+                // products = perks;
+                setProducts(perks);
+                break;
+            case "crates":
+                // products = crates;
+                setProducts(crates);
+                break;
+            case "items":
+                // products = items;
+                setProducts(items);
+                break;
+            default:
+                // products = ranks;
+                setProducts(ranks);
+        }
+        console.log(products);
+        setSelectValue(value);
     }
 
     return (
@@ -78,11 +107,11 @@ function Store(){
 
                 <Row className="mx-1 mx-md-5 my-3 pt-3 pt-md-5">
                     <Col xs={8} className="float-start">
-                        <Form.Select aria-label="Default select example" className="w-1 00" onChange={handleSelect}>
-                            <option value="0">Ranks</option>
-                            <option value="1">Items</option>
-                            <option value="2">Crate Keys</option>
-                            <option value="3">Perks</option>
+                        <Form.Select aria-label="Default select example" className="w-1 00" onChange={handleSelectChange} value={selectValue}>
+                            <option value="ranks">Ranks</option>
+                            <option value="items">Items</option>
+                            <option value="crates">Crate Keys</option>
+                            <option value="perks">Perks</option>
                         </Form.Select>
                     </Col>
                     <Col xs={4} className="text-end cart-button">
