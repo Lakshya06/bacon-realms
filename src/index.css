@@ -43,6 +43,7 @@ header{
 }
 
 nav a, li{
+  text-decoration: none;
   color: white !important;
   /* font-size: 1.5rem !important; */
   font-size: calc(0.8em + 0.8vw) !important;
@@ -188,6 +189,13 @@ header .mobile-logo img{
     padding: 2px 5px;
     vertical-align: top;
     margin-left: -6px; 
+}
+
+/* ERROR PAGE */
+
+.error-page h1, h2, a{
+  color: white;
+  text-decoration: none;
 }
 
 /* FOOTER */
