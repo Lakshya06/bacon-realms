@@ -33,6 +33,7 @@ function Header(){
                 </Navbar.Collapse>
             </Container>
             </Navbar>
+            {/* <hr /> */}
         </header>
     )
 }

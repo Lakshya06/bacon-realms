@@ -1,12 +1,12 @@
 export const products = [
     {
         id: 1,
-        name: 'Key1',
+        name: 'Item 1',
         price: 100
     },
     {
         id: 2,
-        name: 'Key2',
+        name: 'Item 2',
         price: 200
     }
 ];

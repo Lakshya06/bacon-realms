@@ -8,30 +8,50 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { useSelector } from "react-redux";
 import CartItem from "./CartItems";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
 
 function Store(){
 
     const [show, setShow] = useState(false);
     const [totalQuantity, setTotalQuantity] = useState(0);
+    const [finalTotalCost, setFinalTotalCost] = useState(0);
     const carts = useSelector(store => store.cart.items);
+    // console.log(carts)
+    // let finalTotalCost = 0;
 
     useEffect(() => {
+
+        let totalCost= 0;
+        carts.forEach(
+            item => {
+                // console.log(item);
+                const findDetail = products.filter(product => product.id === item.productId)[0];
+                totalCost += findDetail.price * item.quantity;
+            }
+        )
+        // finalTotalCost = totalCost;
+        setFinalTotalCost(totalCost);
+        // console.log(finalTotalCost);
+
         let total = 0;
         carts.forEach(item => total += item.quantity)
+        // console.log(carts);
         setTotalQuantity(total);
     }, [carts])
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+    function handleSelect(ev){
+        // console.log(ev);
+    }
+
     return (
         <>
-
-        <Button variant="primary" onClick={handleShow}>
-            Cart <span>{totalQuantity}</span>
-        </Button>
-
-        <Modal show={show} onHide={handleClose}>
+        {/* <hr /> */}
+        <Modal show={show} onHide={handleClose} className="modal-cart league-spartan-500">
             <Modal.Header closeButton>
             <Modal.Title>CART</Modal.Title>
             </Modal.Header>
@@ -41,6 +61,7 @@ function Store(){
                 )}
             </Modal.Body>
             <Modal.Footer>
+                {finalTotalCost}
             <Button variant="secondary" onClick={handleClose}>
                 Close
             </Button>
@@ -50,12 +71,39 @@ function Store(){
             </Modal.Footer>
         </Modal>
 
-        <div>
-            {
-                products.map((prod, key) => 
-                    <StoreProduct key={key} data={prod}/>
-                )
-            }
+        <div className="store-page my-5">
+            <Container className="pt-2">
+
+                <h1 className="luckiest-guy-regular text-center mb-5">BACON REALMS STORE</h1>
+
+                <Row className="mx-1 mx-md-5 my-3 pt-3 pt-md-5">
+                    <Col xs={8} className="float-start">
+                        <Form.Select aria-label="Default select example" className="w-1 00" onChange={handleSelect}>
+                            <option value="0">Ranks</option>
+                            <option value="1">Items</option>
+                            <option value="2">Crate Keys</option>
+                            <option value="3">Perks</option>
+                        </Form.Select>
+                    </Col>
+                    <Col xs={4} className="text-end cart-button">
+                        <Button variant="warning" onClick={handleShow} className="acme-regular w-100">
+                        Cart <i class="fa-solid fa-cart-shopping"></i> <span className="badge badge-warning" id="lblCartCount">{totalQuantity}</span>
+                        </Button>
+                    </Col>
+                </Row>
+
+
+                <Row className="mx-1 mt-5 mx-md-5">
+                    {/* <Col md={4}> */}
+                    {
+                        products.map((prod, key) => 
+                            <StoreProduct key={key} data={prod}/>
+                        )
+                    }
+                    
+                    {/* </Col> */}
+                </Row>
+            </Container>
         </div>
         
         </>

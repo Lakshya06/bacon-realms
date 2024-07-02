@@ -6,7 +6,7 @@ import { changeQuantity } from "../Sotre/cart";
 function CartItem(props){
 
     const {productId, quantity} = props.data;
-    const [detail, setDetail] = useState([]);
+    const [detail, setDetail] = useState([]);   
     const dispatch = useDispatch();
 
     useEffect(() => {
