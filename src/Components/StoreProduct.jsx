@@ -38,7 +38,7 @@ function StoreProduct(props){
                         {/* <Card.Text>
                         $ {price}
                         </Card.Text> */}
-                        <Button onClick={handleAddToCart}>Add To Cart</Button>
+                        <Button variant="dark" onClick={handleAddToCart}>Add To Cart</Button>
                     </Card.Body>
                     </Card>
                 </Col>

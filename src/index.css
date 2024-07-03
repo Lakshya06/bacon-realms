@@ -200,9 +200,27 @@ header .mobile-logo img{
 
 /* CART MODAL */
 
-/* .modal-cart{
-  background-color: #1c2120;
-} */
+.modal-cart .modal-content{
+  /* background-color: gainsboro; */
+  /* color: white; */
+}
+
+.modal-cart h5{
+  font-weight: 600;
+  font-size: calc(0.9em + 0.5vw);
+}
+
+.modal-cart img{
+  width: 100%;
+  height: 100%;
+}
+
+.modal-cart .modal-cart-main button{
+  background-color: #fcbc01;
+  border-radius: 40px;
+  border: none;
+  font-size: 1.5em;
+}
 
 /* FOOTER */
 

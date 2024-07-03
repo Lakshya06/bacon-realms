@@ -12,58 +12,68 @@ export const allItems = [
     {
         id: 11,
         name: 'Prime',
-        price: 60
+        price: 60,
+        img: prime
     },
     {
-        id: 21,
+        id: 12,
         name: 'Cardinal',
-        price: 40
+        price: 40,
+        img: cardinal
     },
     {
-        id: 31,
+        id: 13,
         name: 'Elite',
-        price: 20
+        price: 20,
+        img: elite
     },
     {
         id: 21,
         name: '/fly',
-        price: 15
-        
+        price: 15,
+        img: fly
     },
     {
         id: 22,
         name: 'Custom Tag',
-        price: 15
+        price: 15,
+        img: customTag
     },
     {
         id: 31,
         name: 'Ae Crate',
-        price: 1
+        price: 1,
+        img: tripwireHook
     },
     {
         id: 32,
         name: 'Mythical Crate',
-        price: 2
+        price: 2,
+        img: tripwireHook
     },
     {
         id: 33,
         name: 'Cosmetic Crate',
-        price: 3
+        price: 3,
+        img: tripwireHook
     },
     {
         id: 41,
         name: 'Creator Wand',
-        price: 50
+        price: 50,
+        img: diamondHoe
     },
     {
         id: 42,
         name: 'Heroic Wand',
-        price: 30
+        price: 30,
+        img: goldenHoe
     },
     {
         id: 43,
         name: 'Mystic Wand',
-        price: 15
+        price: 15,
+        img: woodenHoe
     }
 ]
 
@@ -75,13 +85,13 @@ export const ranks = [
         img: prime
     },
     {
-        id: 21,
+        id: 12,
         name: 'Cardinal',
         price: 40,
         img: cardinal
     },
     {
-        id: 31,
+        id: 13,
         name: 'Elite',
         price: 20,
         img: elite

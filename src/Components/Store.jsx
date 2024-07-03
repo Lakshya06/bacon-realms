@@ -50,57 +50,74 @@ function Store(){
 
     const [selectValue, setSelectValue] = React.useState("ranks");
     function handleSelectChange(ev){
+        ev.preventDefault();
         const value = ev.target.value;
         // products = {value};
         switch(value){
             case "ranks":
                 // products = ranks;
-                console.log("ranks");
+                // console.log("ranks");
                 setProducts(ranks)
                 break;
             case "perks":
                 // products = perks;
-                console.log("perks");
+                // console.log("perks");
                 setProducts(perks);
                 break;
             case "crates":
                 // products = crates;
-                console.log("crates");
+                // console.log("crates");
                 setProducts(crates);
                 break;
             case "items":
                 // products = items;
-                console.log("wands")
+                // console.log("wands")
                 setProducts(items);
                 break;
             default:
                 // products = ranks;
                 setProducts(ranks);
         }
-        console.log(products);
+        // console.log(products);
         setSelectValue(value);
+    }
+
+    function handleCheckout(){
+        console.log("checkout");
+        window.location.reload();
+        localStorage.clear();
     }
 
     return (
         <>
         {/* <hr /> */}
-        <Modal show={show} onHide={handleClose} className="modal-cart league-spartan-500">
+        <Modal show={show} onHide={handleClose} className="modal-cart league-spartan-500 text-start">
             <Modal.Header closeButton>
             <Modal.Title>CART</Modal.Title>
             </Modal.Header>
-            <Modal.Body>
-                {carts.map((item, key) => 
+            <Modal.Body className="pb-0">
+                {
+                // console.log(carts)
+                carts.map((item, key) => 
                  <CartItem key={key} data={item}/>
                 )}
             </Modal.Body>
-            <Modal.Footer>
-                {finalTotalCost}
-            <Button variant="secondary" onClick={handleClose}>
-                Close
-            </Button>
-            <Button variant="primary" onClick={handleClose}>
-                Checkout
-            </Button>
+            <Modal.Footer className="mt-0">
+                {/* <Container fluid={"xs"}> */}
+                <Row className="w-100 justify-content-center">
+                    <Col className="text-start p-0">
+                    <h5 className="mb-0 mt-2">TOTAL: $ {finalTotalCost}.00 USD</h5>
+                    </Col>
+                    <Col className="text-end px-0">
+                        <Button variant="secondary" onClick={handleClose} className="mx-1 mx-md-3">
+                            Close
+                        </Button>
+                        <Button variant="warning" onClick={handleCheckout}>
+                            Checkout
+                        </Button>
+                    </Col>
+                </Row>
+                {/* </Container> */}
             </Modal.Footer>
         </Modal>
 
