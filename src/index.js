@@ -12,6 +12,7 @@ import Store from "./Components/Store";
 import Footer from "./Components/Footer";
 import ErrorPage from './Components/ErrorPage';
 import Discord from './Components/Discord';
+import ForumPage from './Components/ForumPage';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: '/discord',
         element: <Discord />
+      },
+      {
+        path: '/forum',
+        element: <ForumPage />
       }
     ]
   }

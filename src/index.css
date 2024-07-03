@@ -227,6 +227,42 @@ header .mobile-logo img{
   color: white;
 }
 
+/* FORUM PAGE */
+
+.forum-page{
+  color: white;
+}
+
+.forum-page h1{
+  color: #fcbc01;
+  font-size: calc(2.2em + 1.5vw) !important;
+  /* font-size: calc(2rem + 2vw); */
+}
+
+.forum-page h2{
+  font-weight: 600;
+}
+
+.forum-page h4{
+  font-size: calc(0.8em + 0.6vw);
+}
+
+.forum-accordian{
+  box-shadow: none;
+  border-radius: 16px !important;
+  font-weight: 600;
+}
+
+.forum-question{
+  border-radius: 16px !important;
+}
+
+.forum-question button{
+  border-radius: 16px !important;
+  font-weight: 800;
+  /* color: #fcbc01 !important; */
+}
+
 /* FOOTER */
 
 .footer{
@@ -249,7 +285,7 @@ header .mobile-logo img{
   
   color: #767676;
   text-decoration: none;
-  font-size: calc(0.3em + 0.9vw);
+  font-size: calc(0.55em + 0.65vw);
 }
 
 .footer .footer-icons a{
