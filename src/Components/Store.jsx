@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Container from 'react-bootstrap/Container';
 // import { products } from "../Assets/storeList";
 
-import { ranks, perks, crates, items } from "../Assets/storeList";
+import { allItems, ranks, perks, crates, items } from "../Assets/storeList";
 
 import StoreProduct from "./StoreProduct";
 // import { useState } from 'react';
@@ -31,7 +31,7 @@ function Store(){
         carts.forEach(
             item => {
                 // console.log(item);
-                const findDetail = products.filter(product => product.id === item.productId)[0];
+                let findDetail = allItems.filter(product => product.id === item.productId)[0];
                 totalCost += findDetail.price * item.quantity;
             }
         )
@@ -55,18 +55,22 @@ function Store(){
         switch(value){
             case "ranks":
                 // products = ranks;
+                console.log("ranks");
                 setProducts(ranks)
                 break;
             case "perks":
                 // products = perks;
+                console.log("perks");
                 setProducts(perks);
                 break;
             case "crates":
                 // products = crates;
+                console.log("crates");
                 setProducts(crates);
                 break;
             case "items":
                 // products = items;
+                console.log("wands")
                 setProducts(items);
                 break;
             default:

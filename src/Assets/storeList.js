@@ -8,7 +8,7 @@ import tripwireHook from "../Assets/trip-wire.png";
 import woodenHoe from "../Assets/wooden-hoe.png";
 import goldenHoe from "../Assets/golden-hoe.png";
 
-export const products = [
+export const allItems = [
     {
         id: 11,
         name: 'Prime',
