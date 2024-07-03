@@ -20,6 +20,7 @@ function Header(){
                     
                     <NavLink to="/store" className={({ isActive }) => isActive ? "mx-4 my-auto active" : "mx-4 my-auto"}>STORE</NavLink>
                     <NavLink to="/discord" className={({ isActive }) => isActive ? "mx-4 my-auto active" : "mx-4 my-auto"}>DISCORD</NavLink>
+                    {/* <Nav.Link href="https://discord.com/invite/ugdgjy6TXb" className="mx-4 my-auto">DISCORD</Nav.Link> */}
 
                     {/* <Navbar.Brand href="#home"> */}
                     <Image src={require("../Assets/logo3.png")} alt="" className="logo my-2 mx-5 d-none d-lg-block" fluid/>

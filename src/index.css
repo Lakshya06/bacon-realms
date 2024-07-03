@@ -222,6 +222,11 @@ header .mobile-logo img{
   font-size: 1.5em;
 }
 
+.discord{
+  height: 500px;
+  color: white;
+}
+
 /* FOOTER */
 
 .footer{

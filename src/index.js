@@ -11,6 +11,7 @@ import HomePage from "./Components/HomePage";
 import Store from "./Components/Store";
 import Footer from "./Components/Footer";
 import ErrorPage from './Components/ErrorPage';
+import Discord from './Components/Discord';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
@@ -26,7 +27,11 @@ const router = createBrowserRouter([
       },
       {
           path: '/store',
-          element: <Store />     
+          element: <Store />
+      },
+      {
+        path: '/discord',
+        element: <Discord />
       }
     ]
   }
