@@ -2,6 +2,7 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Link } from "react-router-dom";
 
 function Footer(){
 
@@ -19,12 +20,12 @@ function Footer(){
                 <Col sm={12} md={6}>
                 <Row>
                     <div className="footer-nav text-center text-md-end">
-                        <a href="" className="px-3">Home</a>
-                        <a href="" className="px-3">Store</a>
-                        <a href="" className="px-3">Discord</a>
-                        <a href="" className="px-3">Forum</a>
-                        <a href="" className="px-3">Support</a>
-                        <a href="" className="px-3">Login</a>
+                        <Link to="/" className="px-3">Home</Link>
+                        <Link to="/store" className="px-3">Store</Link>
+                        <Link to="/discord" className="px-3">Discord</Link>
+                        <Link to="/forum" className="px-3">Forum</Link>
+                        <Link to="/support" className="px-3">Support</Link>
+                        <Link to="/login" className="px-3">Login</Link>
                     </div>
                 </Row>
 

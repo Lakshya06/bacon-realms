@@ -109,7 +109,7 @@ function Store(){
                     <Col xs={8} className="float-start">
                         <Form.Select aria-label="Default select example" className="w-1 00" onChange={handleSelectChange} value={selectValue}>
                             <option value="ranks">Ranks</option>
-                            <option value="items">Items</option>
+                            <option value="items">Wands</option>
                             <option value="crates">Crate Keys</option>
                             <option value="perks">Perks</option>
                         </Form.Select>

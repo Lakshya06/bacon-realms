@@ -4,7 +4,7 @@ import diamondHoe from "../Assets/diamond-hoe.png";
 import elite from "../Assets/elite.png";
 import fly from "../Assets/fly.png";
 import prime from "../Assets/prime.png";
-import tripwireHook from "../Assets/tripwire-hook.png";
+import tripwireHook from "../Assets/trip-wire.png";
 import woodenHoe from "../Assets/wooden-hoe.png";
 import goldenHoe from "../Assets/golden-hoe.png";
 
