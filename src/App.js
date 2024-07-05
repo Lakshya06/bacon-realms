@@ -9,6 +9,7 @@ import Footer from "./Components/Footer";
 
 
 function App() {
+  const user = localStorage.getItem("token")
   return (
     <div className="App">
       <Header />
