@@ -269,6 +269,41 @@ header .mobile-logo img{
   box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
 }
 
+.support-page h1{
+  color: #fcbc01;
+  font-size: calc(2.2em + 1.5vw) !important;
+}
+
+.support-page h2{
+  color: white;
+  font-weight: 700;
+  font-size: calc(1.4rem + 1vw);
+}
+
+.support-page h3, h4, h5{
+  color: white !important;
+}
+
+.support-page h4{
+  font-weight: 700;
+  font-size: calc(1rem + 0.8vw);
+  /* font-family: "League Spartan", sans-serif !important; */
+  /* color: green !important; */
+}
+
+.support-page .rules{
+  /* border-right: 1px solid grey; */
+  color: white;
+  font-weight: 500;
+}
+
+.support-page li{
+  margin-top: calc(0.5em + 1vw);
+  font-size: calc(0.3em + 0.8vw);
+  font-weight: 700;
+}
+
+
 /* FOOTER */
 
 .footer{
