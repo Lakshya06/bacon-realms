@@ -36,7 +36,7 @@ function RegisterPage(){
 
                 <div className="text-center mt-5">
 
-                <button type="warning" class="btn btn-warning w-50">Register</button>
+                <button type="reset" class="btn btn-warning w-50">Register</button>
                 <h5 className="mt-5">Already have an account? <u><b><Link to="/login">Login Here</Link></b></u></h5>
                 </div>
                 </form>

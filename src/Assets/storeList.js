@@ -74,6 +74,24 @@ export const allItems = [
         name: 'Mystic Wand',
         price: 15,
         img: woodenHoe
+    },
+    {
+        id: 51,
+        name: 'Elite to Cardinal',
+        price: 20,
+        img: cardinal
+    },
+    {
+        id: 52,
+        name: 'Elite to Prime',
+        price: 40,
+        img: prime
+    },
+    {
+        id: 53,
+        name: 'Cardinal to Prime',
+        price: 20,
+        img: prime
     }
 ]
 
@@ -97,6 +115,27 @@ export const ranks = [
         img: elite
     }
 ];
+
+export const rankUpgrades = [
+    {
+        id: 51,
+        name: 'Elite to Cardinal',
+        price: 20,
+        img: cardinal
+    },
+    {
+        id: 52,
+        name: 'Elite to Prime',
+        price: 40,
+        img: prime
+    },
+    {
+        id: 53,
+        name: 'Cardinal to Prime',
+        price: 20,
+        img: prime
+    }
+]
 
 export const perks = [
     {

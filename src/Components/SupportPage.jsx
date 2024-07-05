@@ -67,11 +67,12 @@ function SupportPage(){
                         <h5>Yuna</h5>
                         <h5>Karan</h5>
 
-                        <li><h4>DISCORD MODS: </h4></li>
-                        <h5>Kaoru</h5>
-                        <h5>Mr.Rooster</h5>
+                        <li><h4>MODERATORS: </h4></li>
+                        <h5>Nezuko</h5>
+                        <h5>Tadzuna</h5>
+                        <h5>Emiko</h5>
 
-                        <li><h4>DEVS: </h4></li>
+                        <li><h4>DEVELOPERS: </h4></li>
                         <h5>Etcetera</h5>
                         {/* <h5>TEST 1</h5> */}
                         {/* <h5>TEST 1</h5> */}

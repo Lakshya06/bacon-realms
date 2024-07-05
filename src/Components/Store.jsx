@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Container from 'react-bootstrap/Container';
 // import { products } from "../Assets/storeList";
 
-import { allItems, ranks, perks, crates, items } from "../Assets/storeList";
+import { allItems, ranks, perks, crates, items, rankUpgrades } from "../Assets/storeList";
 
 import StoreProduct from "./StoreProduct";
 // import { useState } from 'react';
@@ -74,6 +74,9 @@ function Store(){
                 // console.log("wands")
                 setProducts(items);
                 break;
+            case "rank-upgrades":
+                setProducts(rankUpgrades);
+                break;
             default:
                 // products = ranks;
                 setProducts(ranks);
@@ -130,6 +133,7 @@ function Store(){
                     <Col xs={8} className="float-start">
                         <Form.Select aria-label="Default select example" className="w-1 00" onChange={handleSelectChange} value={selectValue}>
                             <option value="ranks">Ranks</option>
+                            <option value="rank-upgrades">Rank Upgrades</option>
                             <option value="items">Wands</option>
                             <option value="crates">Crate Keys</option>
                             <option value="perks">Perks</option>

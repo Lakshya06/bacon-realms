@@ -29,7 +29,7 @@ function LoginPage(){
 
                 <div className="text-center mt-5">
 
-                <button type="warning" class="btn btn-warning w-50">Log In</button>
+                <button type="reset" class="btn btn-warning w-50">Log In</button>
                     <h5 className="mt-5">Don't have an account? <u><b><Link to="/register">Register Here</Link></b></u></h5>
                 </div>
                 </form>
