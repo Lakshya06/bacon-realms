@@ -17,8 +17,7 @@ function SupportPage(){
                     <Col xs={12} md={8} className=" my- 2 my-md-5 rules">
                         <h2>RULES</h2>
                         <ol className="">
-
-                            
+              
                         <li> Be respectful
                         </li> Treat others as your own family members.
 

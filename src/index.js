@@ -14,7 +14,9 @@ import ErrorPage from './Components/ErrorPage';
 import Discord from './Components/Discord';
 import ForumPage from './Components/ForumPage';
 import SupportPage from './Components/SupportPage';
+import LoginPage from './Components/LoginPage';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import RegisterPage from './Components/RegisterPage';
 
 const router = createBrowserRouter([
   
@@ -42,6 +44,14 @@ const router = createBrowserRouter([
       {
         path: '/support',
         element: <SupportPage />
+      },
+      {
+        path: '/login',
+        element: <LoginPage />
+      },
+      {
+        path: '/register',
+        element: <RegisterPage />
       }
     ]
   }

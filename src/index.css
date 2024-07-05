@@ -112,6 +112,10 @@ header .mobile-logo img{
 
 /* STORE PAGE */
 
+.store-page{
+  min-height: 800px;
+}
+
 .store-page h1{
   color: #fcbc01;
   font-size: calc(2.2em + 1.5vw) !important;
@@ -303,6 +307,55 @@ header .mobile-logo img{
   font-weight: 700;
 }
 
+/* LOGIN PAGE */
+
+.login-page{
+  min-height: 500px;
+}
+
+.login-page h1{
+  color: #fcbc01;
+  font-size: calc(2.2em + 1.5vw) !important;
+}
+
+.login-page .login-form{
+  color: white;
+}
+
+.login-page button{
+  /* width: 100%; */
+  color: white;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px) {
+  .login-form form{
+    width: 100% !important;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .login-form form{
+    width: 80% !important;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .login-form form{
+    width: 50%;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .login-form form{
+    width: 50%;
+  }
+}
 
 /* FOOTER */
 

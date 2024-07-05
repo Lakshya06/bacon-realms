@@ -29,6 +29,7 @@ function Header(){
                     <NavLink to="/forum" className={({ isActive }) => isActive ? "mx-4 my-auto active" : "mx-4 my-auto"}>FORUM</NavLink>
                     <NavLink to="/support" className={({ isActive }) => isActive ? "mx-4 my-auto active" : "mx-4 my-auto"}>SUPPORT</NavLink>
                     <NavLink to="/login" className={({ isActive }) => isActive ? "mx-4 my-auto active" : "mx-4 my-auto"}>LOGIN</NavLink>
+                    {/* <NavLink to="/register" className={({ isActive }) => isActive ? "mx-4 my-auto active" : "mx-4 my-auto"} id="">REGISTER</NavLink> */}
 
                 </Nav>
                 </Navbar.Collapse>
