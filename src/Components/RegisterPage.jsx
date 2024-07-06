@@ -65,9 +65,13 @@ function RegisterPage(){
                     <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Re-enter Password" name="confirmPassword" onChange={handleChange} value={data.confirmPassword} required/>
                 </div>
 
+                <span className="password-warning"><i><p>*password must be at least 8 chars long and must have a lower case, an upper case and a special character</p></i></span>
+
                 <div className="text-center mt-5">
 
-                {error && <div>{error}</div>}
+                {error && <div class="alert alert-danger mb-4" role="alert">
+                                {error}
+                            </div>}
 
                 <button type="sumbit" class="btn btn-warning w-50">Register</button>
                 <h5 className="mt-5">Already have an account? <u><b><Link to="/login">Login Here</Link></b></u></h5>

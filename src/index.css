@@ -357,6 +357,17 @@ header .mobile-logo img{
   }
 }
 
+.error-message{
+  font-size: calc(1em + 0.7vw);
+  color: rgb(255, 69, 69);
+  font-weight: 700;
+}
+
+.password-warning{
+  color: #fcbc01;
+}
+
+
 /* FOOTER */
 
 .footer{
