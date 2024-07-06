@@ -60,7 +60,9 @@ function LoginPage(){
                 </div>
 
                 <div className="text-center mt-5">
-                {error && <div>{error}</div>}
+                    {error && <div class="alert alert-danger mb-4" role="alert">
+                                {error}
+                                </div>}
                     <button type="submit" class="btn btn-warning w-50">Log In</button>
                     <h5 className="mt-5">Don't have an account? <u><b><Link to="/register">Register Here</Link></b></u></h5>
                 </div>
