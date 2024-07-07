@@ -31,10 +31,10 @@ function Footer(){
 
                 <Row>
                     <span className="footer-icons text-center text-md-end my-2">
-                        <a href=""> <i class="fa-brands fa-discord mx-3 mx-md-4"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram mx-3 mx-md-4"></i></a>
-                        <a href=""><i class="fa-brands fa-youtube mx-3 mx-md-4"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter mx-3 mx-md-4"></i></a>
+                        <Link to="https://discord.com/invite/ugdgjy6TXb"> <i class="fa-brands fa-discord mx-3 mx-md-4"></i></Link>
+                        <Link to="https://www.instagram.com/bacon.realms?igsh=MWhqZXdvYndxOWd1Nw=="><i class="fa-brands fa-instagram mx-3 mx-md-4"></i></Link>
+                        <Link to="https://youtube.com/@asuna0099?si=bIDPnQ7nEngyKOoY"><i class="fa-brands fa-youtube mx-3 mx-md-4"></i></Link>
+                        <Link to="https://x.com/BaconRealm86265?t=1Hjz9lGA1rn0_rG-R-2lCw&s=09"><i class="fa-brands fa-twitter mx-3 mx-md-4"></i></Link>
                     </span>
                 </Row>
                 </Col>
