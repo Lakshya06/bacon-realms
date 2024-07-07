@@ -23,10 +23,10 @@ function LoginPage(){
         e.preventDefault();
         // console.log('hi');
         try{
-            const url = "http://localhost:4000/api/auth";
-            // const url = "https://bacon-realms-api.onrender.com/api/auth";
+            // const url = "http://localhost:4000/api/auth";
+            const url = "https://bacon-realms-api.onrender.com/api/auth";
             const {data: res} = await axios.post(url, data);
-            // console.log(res);
+            console.log(res);
             localStorage.setItem("username", res.username);
             localStorage.setItem("token", res.data);
             // console.log(res.username);

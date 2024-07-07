@@ -6,10 +6,8 @@ import App from './App';
 import { Provider } from 'react-redux';
 import { store } from './Sotre';
 
-import Header from "./Components/Header";
 import HomePage from "./Components/HomePage";
 import Store from "./Components/Store";
-import Footer from "./Components/Footer";
 import ErrorPage from './Components/ErrorPage';
 import Discord from './Components/Discord';
 import ForumPage from './Components/ForumPage';
@@ -17,8 +15,6 @@ import SupportPage from './Components/SupportPage';
 import LoginPage from './Components/LoginPage';
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
 import RegisterPage from './Components/RegisterPage';
-// import ProtectedRoutes from './Components/ProtectedRoutes';
-const username = localStorage.getItem("username");
 const token = localStorage.getItem("token");
 
 const loggedOutRouter = createBrowserRouter([
@@ -87,7 +83,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/login',
-        element: <LoginPage />
+        element: <Navigate to="/" />
       },
       {
         path: '/register',
