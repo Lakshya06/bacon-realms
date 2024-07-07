@@ -1,11 +1,15 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 function ErrorPage(){
     
     return (
         <>
+        <Helmet>
+            <title>Error | Bacon Realms</title>
+        </Helmet>
             <div className="error-page league-spartan-500 m-5">
                 <h1>Error 404 | Not Found</h1>
                 <h2>

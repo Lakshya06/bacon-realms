@@ -1,9 +1,13 @@
 import React from "react";
 import Container from 'react-bootstrap/Container';
+import { Helmet } from "react-helmet";
 
 function HomePage(){
     return (
         <>
+        <Helmet>
+            <title>Home | Bacon Realms</title>
+        </Helmet>
             <Container className="carousels px-5 text-center py-auto mb-0" fluid="xs">
             <h1 className="league-spartan-500 pt-5">WELCOME TO  <span className="luckiest-guy-regular">BACON REALMS</span></h1>
             <h2 className="luckiest-guy-regular"><span>IP: </span>BACONREALMS.COM</h2>

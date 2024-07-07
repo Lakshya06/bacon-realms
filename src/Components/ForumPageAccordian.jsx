@@ -1,5 +1,6 @@
 import React from "react";
 import Accordion from 'react-bootstrap/Accordion';
+import { Helmet } from "react-helmet";
 
 function ForumPageAccordian(props){
 

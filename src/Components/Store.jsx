@@ -14,6 +14,7 @@ import CartItem from "./CartItems";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
+import { Helmet } from "react-helmet";
 
 function Store(){
 
@@ -93,6 +94,9 @@ function Store(){
 
     return (
         <>
+        <Helmet>
+            <title>Store | Bacon Realms</title>
+        </Helmet>
         {/* <hr /> */}
         <Modal show={show} onHide={handleClose} className="modal-cart league-spartan-500 text-start">
             <Modal.Header closeButton>

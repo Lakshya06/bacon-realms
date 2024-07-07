@@ -3,11 +3,15 @@ import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 function SupportPage(){
 
     return (
         <>
+        <Helmet>
+            <title>Support | Bacon Realms</title>
+        </Helmet>
             <Container className="support-page">
                 <div className="luckiest-guy-regular text-center m-5">
 

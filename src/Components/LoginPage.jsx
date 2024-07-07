@@ -5,6 +5,7 @@ import Col from "react-bootstrap/esm/Col";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import axios from 'axios';
+import { Helmet } from 'react-helmet';
 
 function LoginPage(){
 
@@ -43,6 +44,9 @@ function LoginPage(){
 
     return(
         <>
+        <Helmet>
+            <title>Login | Bacon Realms</title>
+        </Helmet>
         <Container className="login-page my-5">
 
             <div className="text-center luckiest-guy-regular">

@@ -6,12 +6,17 @@ import Accordion from 'react-bootstrap/Accordion';
 import ForumPageAccordian from "./ForumPageAccordian";
 import { qna } from "../Assets/qnaForum";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+
 
 function ForumPage(){
 
     console.log(qna);
     return (
         <> 
+        <Helmet>
+            <title>Forums | Bacon Realms</title>
+        </Helmet>
             <Container className="forum-page">
                 <Row className=" mt-5">
                     {/* <Col> */}
