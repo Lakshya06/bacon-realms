@@ -59,6 +59,14 @@ header .mobile-logo img{
   width: 10vw;
 }
 
+header button{
+  background-color: #1c2120 !important;
+  color: white !important;
+  border-radius: 16px !important;
+  font-size: calc(0.5em + 0.8vw) !important;
+
+}
+
 .active{
   padding: 3px 25px !important;
   background-color: #fcbc01;
@@ -316,6 +324,10 @@ header .mobile-logo img{
 .login-page h1{
   color: #fcbc01;
   font-size: calc(2.2em + 1.5vw) !important;
+}
+
+.login-page h4{
+  color: #fcbc01 !important;
 }
 
 .login-page .login-form{

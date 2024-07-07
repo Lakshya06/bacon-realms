@@ -15,11 +15,51 @@ import Discord from './Components/Discord';
 import ForumPage from './Components/ForumPage';
 import SupportPage from './Components/SupportPage';
 import LoginPage from './Components/LoginPage';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
 import RegisterPage from './Components/RegisterPage';
+// import ProtectedRoutes from './Components/ProtectedRoutes';
+const username = localStorage.getItem("username");
+const token = localStorage.getItem("token");
+
+const loggedOutRouter = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: '/',
+        element: <LoginPage />
+      },
+      {
+        path: '/store',
+        element: <Navigate to="/login" />
+      },
+      {
+        path: '/discord',
+        element: <Navigate to="/login" />
+      },
+      {
+        path: '/forum',
+        element: <Navigate to="/login" />
+      },
+      {
+        path: '/support',
+        element: <Navigate to="/login" />
+      },
+      {
+        path: '/login',
+        element: <LoginPage />
+      },
+      {
+        path: '/register',
+        element: <RegisterPage />
+      }
+    ]
+  }
+])
 
 const router = createBrowserRouter([
-  
   {
     path: '/',
     element: <App />,
@@ -61,6 +101,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
     {/* <App /> */}
-      <RouterProvider router={router}/>
+      <RouterProvider router={token != null ? router : loggedOutRouter}/>
   </Provider>
 );

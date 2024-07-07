@@ -6,10 +6,12 @@ import HomePage from "./Components/HomePage";
 import Store from "./Components/Store";
 import Footer from "./Components/Footer";
 
-
+// export const UserContext = React.createContext(null);
 
 function App() {
-  const user = localStorage.getItem("token")
+  // const [user, setUser] = useState(null);
+  // const user = localStorage.getItem("token");
+  // console.log(user);
   return (
     <div className="App">
       <Header />

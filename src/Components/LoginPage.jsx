@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import axios from 'axios';
 
-
 function LoginPage(){
 
     const [data, setData] = useState({
@@ -22,13 +21,17 @@ function LoginPage(){
     async function handleSubmit(e){
 
         e.preventDefault();
-        console.log('hi');
+        // console.log('hi');
         try{
             const url = "http://localhost:4000/api/auth";
+            // const url = "https://bacon-realms-api.onrender.com/api/auth";
             const {data: res} = await axios.post(url, data);
+            // console.log(res);
+            localStorage.setItem("username", res.username);
             localStorage.setItem("token", res.data);
-            console.log(res.message);
-            // window.location = "/";
+            // console.log(res.username);
+            // console.log(res.message);
+            window.location = "/";
         }
         catch(error){
             console.log(error);
@@ -46,7 +49,11 @@ function LoginPage(){
                 <h1>LOGIN</h1>
             </div>
 
-            <Row className="my-5 league-spartan-500">
+            <div className="text-center luckiest-guy-regular mt-4">
+                <h4>Please Login first to access other pages</h4>
+            </div>
+
+            <Row className="mt-4 mb-5 league-spartan-500">
                 <Col className="d-flex justify-content-center align-items-center login-form">
                 <form className="my-5" onSubmit={handleSubmit}>
                 <div class="mb-4">
