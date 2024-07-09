@@ -220,6 +220,7 @@ header button{
 .modal-cart h5{
   font-weight: 600;
   font-size: calc(0.9em + 0.5vw);
+  color: #1c2120 !important;
 }
 
 .modal-cart img{
